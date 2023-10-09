@@ -22,10 +22,13 @@ export const TransactionsContext = createContext({} as TransactionContextType);
 export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   async function loadTransactions() {
-    const response = await fetch("http://localhost:4444/transactions");
-    const data = await response.json();
-
-    setTransactions(data);
+    try {
+      const response = await fetch("http://localhost:4444/transactions");
+      const data = await response.json();
+      setTransactions(data);
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   useEffect(() => {
