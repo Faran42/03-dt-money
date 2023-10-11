@@ -31,6 +31,30 @@
       "category": "Venda",
       "price": 1980,
       "createdAt": "2023-10-04T13:53:30.649Z"
+    },
+    {
+      "description": "Férias",
+      "price": 2333,
+      "category": "Trabalho",
+      "type": "income",
+      "createdAt": "2023-10-10T14:42:23.032Z",
+      "id": 5
+    },
+    {
+      "description": "Pizza fim de semana",
+      "price": 50,
+      "category": "Alimentação",
+      "type": "income",
+      "createdAt": "2023-10-10T14:44:01.847Z",
+      "id": 6
+    },
+    {
+      "description": "Calzone",
+      "price": 39,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-10-10T14:59:55.237Z",
+      "id": 7
     }
   ]
 }
